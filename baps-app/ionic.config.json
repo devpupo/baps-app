@@ -1,0 +1,7 @@
+{
+  "name": "baps-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
