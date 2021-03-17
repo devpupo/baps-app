@@ -7,6 +7,14 @@ const routes: Routes = [
     loadChildren: () => import('./destiny/destiny.module').then( m => m.DestinyPageModule)
   },
   {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then( m => m.BlogPageModule)
+  },
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
