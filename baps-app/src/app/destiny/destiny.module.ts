@@ -16,4 +16,4 @@ import { DestinyPageRoutingModule } from './destiny-routing.module';
   ],
   declarations: [DestinyPage]
 })
-export class HomePageModule {}
+export class DestinyPageModule {}
