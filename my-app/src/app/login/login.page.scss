@@ -1,0 +1,30 @@
+ion-title{
+    text-align: center;
+}
+
+ion-button{
+    --background: #7A083B;
+    width: 100%;
+}
+
+.input-login{
+    border-bottom: solid;
+    border-radius: 0.5px;
+    border-color: rgb(170, 163, 163);
+}
+
+.forgot-password{
+    font-weight: bold;
+    color: #7A083B;
+    text-align: center;
+}
+
+.create-account{
+    font-weight: bold;
+    --background: #32b44e;
+}
+
+.testezao-da-massa{
+    vertical-align: middle;
+    display: block;
+}
