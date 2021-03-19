@@ -7,12 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  navCtrl: any;
 
   constructor(private router: Router) { }
-
-  openNavLoginPage() {
-    this.router.navigate(['/login/LoginPage']);
-  }
 
 }
