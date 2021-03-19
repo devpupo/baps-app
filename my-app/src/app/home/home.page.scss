@@ -1,3 +1,30 @@
+.tooolbar-menu{
+  --background: #7A083B;
+  color: #F7C0B5;
+}
+
+.btn{
+  --background: #7A083B;
+  color: #F7C0B5;
+  padding-left: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+}
+
+.btn-login{
+  --box-shadow: 0px;
+}
+
+.title-create-account{
+  color: white;
+}
+
+.btn-create-account{
+  --border-color: white !important;
+  --padding-end: 0px;
+  --padding-start: 0px;
+}
+
 #container {
   text-align: center;
 
