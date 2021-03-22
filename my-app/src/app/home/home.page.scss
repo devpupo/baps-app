@@ -1,3 +1,70 @@
+ion-icon{
+  color: black;
+}
+
+ion-slides {
+  --scroll-bar-background: black;
+  --scroll-bar-background-active: 10px;
+  width: 100%;
+}
+
+.tooolbar-menu{
+  --background: #7A083B;
+  color: #F7C0B5;
+}
+
+.btn{
+  --background: #7A083B;
+  color: #F7C0B5;
+  padding-left: 0px;
+  padding: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+}
+
+.btn-login{
+  --box-shadow: 0px;
+}
+
+.title-create-account{
+  color: white;
+}
+
+.btn-create-account{
+  --border-color: transparent;
+  --padding-end: 0px;
+  --padding-start: 0px;
+}
+
+.card-promotion{
+  display: block;
+  width: 100%;
+}
+
+.text-suggested-flight{
+  font-size: 12px;
+  padding-left: 5px;
+  display: inline;
+}
+
+.text-flight-stops{
+  color: rgba(128, 128, 128, 0.603);
+}
+
+.text-price{
+  padding-right: 3px;
+  display: inline;
+}
+
+.text-dollar-sign{
+  font-size: 12px;
+}
+
+.text-total-price{
+  font-size: 15px;
+  font-weight: bold;
+}
+
 #container {
   text-align: center;
 

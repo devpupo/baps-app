@@ -1,27 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="tooolbar-menu">
     <ion-title slot="start">
-      Blank
+      BAPS
     </ion-title>
-    <ion-button routerLink="/LoginPage">
-      <ion-title slot="start">
+    <ion-button slot="end" shape='round' size='small' class="btn btn-login" routerLink="/LoginPage">
+      <ion-title size='small' class="">
         Login
+      </ion-title>
+    </ion-button>
+    <ion-button slot="end" shape='round' color='light' size='small' class="btn btn-create-account" fill='outline'
+      routerLink="/">
+      <ion-title size='small' class="title-create-account">
+        Criar Conta
       </ion-title>
     </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="small">Blank</ion-title>
-      <ion-title size="small">Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-slides autoplayDisableOnInteraction='true' page='false' scrollbar="false" [options]="slideOpts">
+    <div *ngFor="let promotion of promotions">
+      <ion-slide>
+        <ion-card class="card-promotion">
+          <ion-card-header>
+            <ion-img [src]="promotion.imgPath"></ion-img>
+            <ion-card-subtitle>{{promotion.timeTravel}} dias</ion-card-subtitle>
+            <ion-card-title>{{promotion.city}}</ion-card-title>
+          </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size='6'>
+                <p class="text-suggested-flight">Voo sugerido</p>
+                <p class="text-suggested-flight text-flight-stops">Sem paradas</p>
+                <p>{{promotion.fromAirport}} <ion-icon name='airplane-outline'></ion-icon>
+                  {{promotion.destinationAirport}}
+                </p>
+              </ion-col>
+              <ion-col size='6'>
+                <p class="text-price text-dollar-sign">R$</p>
+                <p class="text-price text-total-price">{{promotion.price}}</p>
+                <p class="text-price">/ adulto</p>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </div>
+  </ion-slides>
 </ion-content>
