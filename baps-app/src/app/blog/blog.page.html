@@ -1,75 +1,74 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="tooolbar-menu">
-    <ion-title slot="start">
-      BAPS
-    </ion-title>
-    <ion-button slot="end" shape='round' size='small' class="btn btn-login" routerLink="/LoginPage">
-      <ion-title size='small' class="">
-        Login
-      </ion-title>
-    </ion-button>
-    <ion-button slot="end" shape='round' color='light' size='small' class="btn btn-create-account" fill='outline'
-      routerLink="/">
-      <ion-title size='small' class="title-create-account">
-        Criar Conta
-      </ion-title>
-    </ion-button>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content >
-  <div id="container">
-    <h1>Blog BAPS</h1>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="../../assets/imagens/orlando.jpeg"></ion-img>
-            <p class="date">Março 2021</p>
-            <h3>Melhores Hospedagens em Orlando</h3> <br>
-            <p>Confira conosco as melhores hospedagens para sua viagem em Orlando! </p><br>
-            <p>Aqui você encontra qualidade, preço e muito mais!</p><br>
-            <ion-button
-            class="see-more"
-            shape="round"
-            type="submit"
-            >Veja Mais</ion-button>
-          </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="../../assets/imagens/cheaptrip.jpeg" ></ion-img>
-            <p class="date">Março 2021</p>
-            <h3>5 Destinos Baratos e Paradisíacos</h3> <br>
-            <p>Quer viajar mas não tem dinheiro<p><br>
-            <p>Com as dicas da BASP você viaja para lugares fantásticos e sem sofrer no bolso!</p><br>
-            <p>Vem com a gente!</p><br>
-            <ion-button
-            class="see-more"
-            shape="round"
-            type="submit"
-            >Veja Mais</ion-button>
-          </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <div>
-            <ion-img src="../../assets/imagens/passaporte.jpeg" ></ion-img>
-            <p class="date">Março 2021</p>
-            <h3>Os 10 Melhores Destinos Para Viajar</h3><br>
-            <p>Está planejando uma viagem mas nâo faz ideia pra onde ir?<p><br>
-            <p>A BAPS te ajuda com isso! Confira com a gente os melhores lugares pra se viajar acompanhado</p><br>
-            <ion-button
-            class="see-more"
-            shape="round"
-            type="submit"
-            >Veja Mais</ion-button>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../../assets/imagens/orlando.jpeg"></ion-img>
+      <ion-card-subtitle>Março 2021</ion-card-subtitle>
+      <ion-card-title>Melhores Hospedagens em Orlando</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Confira conosco as melhores hospedagens para sua viagem em Orlando!
+      Aqui você encontra qualidade, preço e muito mais!
+    </ion-card-content>
+    <ion-button>Veja Mais</ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../../assets/imagens/cheaptrip.jpeg" ></ion-img>
+      <ion-card-subtitle>Março 2021</ion-card-subtitle>
+      <ion-card-title>Destinos Baratos e Paradisíacos</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Quer viajar mas não tem dinheiro?
+      Com as dicas da BASP você viaja para lugares fantásticos e sem sofrer no bolso!
+      Vem com a gente!
+    </ion-card-content>
+    <ion-button>Veja Mais</ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../../assets/imagens/passaporte.jpeg" ></ion-img>
+      <ion-card-subtitle>Março 2021</ion-card-subtitle>
+      <ion-card-title>Os 10 Melhores Destinos Para Viajar</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Está planejando uma viagem mas nâo faz ideia pra onde ir?
+      A BAPS te ajuda com isso! Confira com a gente os melhores lugares pra se viajar acompanhado
+    </ion-card-content>
+    <ion-button>Veja Mais</ion-button>
+  </ion-card>
 </ion-content>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="destinos">
+        <ion-icon name="airplane-outline"></ion-icon>
+        <ion-label>Destinos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="dicas">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+        <ion-label>Dicas</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="contato">
+        <ion-icon name="at-outline"></ion-icon>
+        <ion-label>Contato</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="home">
+        <ion-icon name="bookmark-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="account">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Minha Conta</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

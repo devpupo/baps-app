@@ -7,58 +7,15 @@
   overflow-y:hidden;
   overflow-x:hidden;
 }
-.tooolbar-menu{
-  --background: #05426A;
-  color: white !important;
-  font-family: 'Amatic SC', cursive;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Inconsolata', monospace;
-}
-
-.btn{
-  --background: #05426A;
-  color: white;
-  padding-left: 0px;
-  padding: 0px;
-  --padding-end: 0px;
-  --padding-start: 0px;
-}
-
-.btn-login{
-  --box-shadow: 0px;
-  --background: #05426A !important;
-  color: white !important;
-  font-family: 'Amatic SC', cursive;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Inconsolata', monospace;
-}
-.btn-login:hover{
-  --box-shadow: 0px;
-  --background: #05426A !important;
-  color: white !important;
-}
-
-.title-create-account{
-  color: white;
-  font-family: 'Amatic SC', cursive;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Inconsolata', monospace;
-}
-
-.btn-create-account{
-  --border-color: white !important;
-  --padding-end: 0px;
-  --padding-start: 0px;
-}
 
 .date{
-  color: rgba(145, 127, 127, 0.822);
+  color: rgba(245, 243, 243, 0.822);
   align-content: left;
   align-self: left;
 }
 
-ion-title{
-  color: white; 
+ion-card-title{
+  color: #05426A;
 }
 
 h1{
@@ -67,77 +24,19 @@ h1{
   margin-bottom: -1%;
 }
 
-ion-col{
-  background-color: white;
-  margin: 1%;
-}
-
-
-h3{
-  color:  #05426A;
-  
-}
-p{
-  color: #05426A ;
-  margin: 1%;
-}
-
 ion-button{
-  --background: white !important;
-  color: #05426A !important;
-  text-decoration: none !important;
-}
-
-ion-button:hover{
-  text-decoration: underline;
-  --background: #afd7fc !important;
-  color: #05426A;
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  margin: 0;
-}
-
-ion-row{
-  margin: 3%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-ion-grid{
-  align-content: center;
-  align-items: center;
-}
-
-#container ion-button {
-  text-decoration: underline;
+  --background: #05426A !important;
+  --background-hover: #6c9fce;
+  --color: white!important;
   margin: 2%;
-  border-radius: 5%;
-}
-ion-img{
-  border-radius: 20% !important;
-  margin: 2% !important;
 }
 
-ion-img:hover{
-  --border-radius: 5%;
-  margin: 2%;
-  
-}
-.see-more{
-  font-weight: bold;
-  color:#40D0D9;
-  --background: white;
-}
+
 ion-content{
-  font-family: 'Amatic SC', cursive;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ion-tab-bar{
+  --background: #05426A !important;
+  --color: white;
 }
