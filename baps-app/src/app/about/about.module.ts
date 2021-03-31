@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AboutPage } from './about.page';
 
 import { AboutPageRoutingModule } from './about-routing.module';
-
+import { ToolBarComponent } from '../components/toolbar/toolbar.component';
 
 @NgModule({
   imports: [
@@ -14,6 +14,6 @@ import { AboutPageRoutingModule } from './about-routing.module';
     IonicModule,
     AboutPageRoutingModule
   ],
-  declarations: [AboutPage]
+  declarations: [AboutPage, ToolBarComponent]
 })
 export class AboutPageModule {}

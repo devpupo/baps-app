@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { DestinyPage } from './destiny.page';
 
 import { DestinyPageRoutingModule } from './destiny-routing.module';
-
+import { ToolBarComponent } from '../components/toolbar/toolbar.component';
 
 @NgModule({
   imports: [
@@ -14,6 +14,6 @@ import { DestinyPageRoutingModule } from './destiny-routing.module';
     IonicModule,
     DestinyPageRoutingModule
   ],
-  declarations: [DestinyPage]
+  declarations: [DestinyPage, ToolBarComponent]
 })
 export class DestinyPageModule {}

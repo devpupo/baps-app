@@ -6,7 +6,7 @@ import { HomePage } from './home.page';
 
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { ToolBarComponent } from '../components/toolbar/toolbar.component';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, ToolBarComponent], 
 })
 export class HomePageModule {
 

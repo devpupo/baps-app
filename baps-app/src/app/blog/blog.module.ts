@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { BlogPage } from './blog.page';
 
 import { BlogPageRoutingModule } from './blog-routing.module';
+import { ToolBarComponent } from '../components/toolbar/toolbar.component';
 
 
 @NgModule({
@@ -14,6 +15,6 @@ import { BlogPageRoutingModule } from './blog-routing.module';
     IonicModule,
     BlogPageRoutingModule
   ],
-  declarations: [BlogPage]
+  declarations: [BlogPage, ToolBarComponent]
 })
 export class BlogPageModule {}
