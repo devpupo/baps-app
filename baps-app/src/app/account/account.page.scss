@@ -1,24 +1,90 @@
-#container {
-  background-color: #8c8c8c !important;
-  text-align: center;
-  height: 100%;
+ion-icon{
+  color: black;
+}
+
+ion-content{
+  --ion-background-color:#ffffff;
+}
+
+ion-slides {
+  --scroll-bar-background: black;
+  --scroll-bar-background-active: 10px;
   width: 100%;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.tooolbar-menu{
+  --background: #7A083B;
+  color: #F7C0B5;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.btn{
+  --background: #7A083B;
+  color: #F7C0B5;
+  padding-left: 0px;
+  padding: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
 }
 
-#container a {
-  text-decoration: none;
+.tooolbar-menu{
+  --background: #7A083B;
+  color: #F7C0B5;
+}
+
+.btn{
+  --background: #7A083B;
+  color: #F7C0B5;
+  padding-left: 0px;
+  padding: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+}
+
+.btn-login{
+  --box-shadow: 0px;
+}
+
+.title-create-account{
+  color: white;
+}
+
+.btn-create-account{
+  --border-color: transparent;
+  --padding-end: 0px;
+  --padding-start: 0px;
+}
+
+.profileImg{
+  border-radius: 50%;
+  width: 20%;
+  margin: 2%;
+}
+
+ion-card{
+  margin: 10px;
+  --background:#ffffff
+}
+
+.cardProfile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ion-card-title{
+  font-size: 5vw;
+  --color:black;
+}
+
+ion-card-subtitle{
+  font-size: 3.5vw;
+}
+
+ion-card-content{
+  line-height: 0;
+}
+
+:host{
+    min-height: 10px;
+    --color:black;
 }
