@@ -80,11 +80,34 @@ ion-card-subtitle{
   font-size: 3.5vw;
 }
 
-ion-card-content{
-  line-height: 0;
-}
-
 :host{
     min-height: 10px;
     --color:black;
 }
+
+.item.item-input{
+  --background: transparent !important;
+}
+
+ion-input{
+  color:black;
+  font-size: 4vw;
+}
+
+.sc-ion-label-md-h{
+  font-size: 5vw;
+  font-weight: bold;
+  color: black;
+}
+
+.profileInfoTitle{
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brushIcon{
+  font-size: 3vh;
+}
+
