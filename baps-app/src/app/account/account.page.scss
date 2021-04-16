@@ -1,113 +1,63 @@
-ion-icon{
+ion-icon {
   color: black;
 }
 
-ion-content{
-  --ion-background-color:#ffffff;
+ion-content {
+  --ion-background-color: #ffffff;
 }
 
-ion-slides {
-  --scroll-bar-background: black;
-  --scroll-bar-background-active: 10px;
-  width: 100%;
-}
-
-.tooolbar-menu{
-  --background: #7A083B;
-  color: #F7C0B5;
-}
-
-.btn{
-  --background: #7A083B;
-  color: #F7C0B5;
-  padding-left: 0px;
-  padding: 0px;
-  --padding-end: 0px;
-  --padding-start: 0px;
-}
-
-.tooolbar-menu{
-  --background: #7A083B;
-  color: #F7C0B5;
-}
-
-.btn{
-  --background: #7A083B;
-  color: #F7C0B5;
-  padding-left: 0px;
-  padding: 0px;
-  --padding-end: 0px;
-  --padding-start: 0px;
-}
-
-.btn-login{
-  --box-shadow: 0px;
-}
-
-.title-create-account{
+.title-create-account {
   color: white;
 }
 
-.btn-create-account{
-  --border-color: transparent;
-  --padding-end: 0px;
-  --padding-start: 0px;
-}
-
-.profileImg{
+.profileImg {
   border-radius: 50%;
   width: 20%;
   margin: 2%;
 }
 
-ion-card{
+ion-card {
   margin: 10px;
-  --background:#ffffff
+  --background: #ffffff;
 }
 
-.cardProfile{
+.cardProfile {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-ion-card-title{
+ion-card-title {
   font-size: 5vw;
-  --color:black;
+  --color: black;
 }
 
-ion-card-subtitle{
+ion-card-subtitle {
   font-size: 3.5vw;
 }
 
-:host{
-    min-height: 10px;
-    --color:black;
-}
-
-.item.item-input{
+.item.item-input {
   --background: transparent !important;
 }
 
-ion-input{
-  color:black;
+ion-input {
+  color: black;
   font-size: 4vw;
 }
 
-.sc-ion-label-md-h{
+.sc-ion-label-md-h {
   font-size: 5vw;
   font-weight: bold;
   color: black;
 }
 
-.profileInfoTitle{
+.profileInfoTitle {
   display: flex;
   padding-bottom: 5px;
   justify-content: space-between;
   align-items: center;
 }
 
-.brushIcon{
+.brushIcon {
   font-size: 3vh;
 }
-

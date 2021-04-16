@@ -1,0 +1,30 @@
+ion-content {
+  --ion-background-color: #ffffff;
+}
+
+ion-card{
+  margin-top: 30vh;
+  --background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ion-card-title{
+ color: black;
+}
+
+ion-card-header{
+    display: flex;
+    justify-content: center;
+}
+
+ion-button{
+    margin-bottom: 3vw;
+}
+
+p{
+    margin-bottom: 3vw;
+}
+
+
