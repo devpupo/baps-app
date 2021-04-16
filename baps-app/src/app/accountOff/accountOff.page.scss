@@ -1,17 +1,12 @@
-ion-content {
-  --ion-background-color: #ffffff;
+ion-content{
+  --background: url('../../assets/imagens/accountoff_background.png') no-repeat center center / cover !important;
 }
 
 ion-card{
   margin-top: 30vh;
-  --background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-ion-card-title{
- color: black;
 }
 
 ion-card-header{
