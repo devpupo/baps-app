@@ -1,4 +1,10 @@
+.ioncard{
+  margin-top: 5vh;
+}
 
+ion-content{
+  --background: url('../../assets/imagens/account_background.png') no-repeat center center / cover !important;
+}
 
 .card{
   text-align: center
@@ -12,16 +18,13 @@
   text-align: center
 }
 
-h2{
-  color: #B8E2F2
-}
-
 h1{
   font-size: 13px;
 }
 
 h2{
   font-size: 20px;
+  color: #22a5d8;
 }
 
 .capitais{
@@ -34,9 +37,6 @@ h2{
 
 h4{
   text-align: center;
-}
-
-h4{
   font-size: 12px;
 }
 
