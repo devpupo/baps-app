@@ -7,6 +7,9 @@
   overflow-y:hidden;
   overflow-x:hidden;
 }
+ion-content{
+  --background: url('../../assets/imagens/account_background.png') no-repeat center center / cover !important;
+}
 
 .date{
   color: rgba(245, 243, 243, 0.822);
@@ -15,7 +18,7 @@
 }
 
 ion-card-title{
-  color: #05426A;
+  color: black;
 }
 
 h1{

@@ -1,46 +1,45 @@
 <ion-content [fullscreen]="true">
   <ion-slides autoplayDisableOnInteraction='true' page='false' scrollbar="false" [options]="slideOpts">
-    <div class="RegisterMain">
-      <span class="span">Insira os dados para criar sua conta:</span>
+    <div >
+      <ion-card>
+        <span class="span">Insira os dados para criar sua conta:</span>
+    </ion-card>
       <ion-grid>
         <ion-row class="ion-justify-content-center">
           <!-- <ion-col size="9"> -->
+          <ion-card>
             <ion-item>
-              <ion-label position="floating">Nome completo</ion-label>
+              <ion-label >Nome completo</ion-label>
               <ion-input></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label position="floating">E-mail</ion-label>
+              <ion-label >E-mail</ion-label>
               <ion-input></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label position="floating">CPF</ion-label>
+              <ion-label >CPF</ion-label>
               <ion-input></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label position="floating">Endereço</ion-label>
+              <ion-label >Endereço</ion-label>
               <ion-input></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label position="floating">Data de nascimento</ion-label>
+              <ion-label>Data de nascimento</ion-label>
               <ion-input></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label position="floating">Senha</ion-label>
+              <ion-label >Senha</ion-label>
               <ion-input></ion-input>
             </ion-item>
+            <ion-button>Registrar</ion-button
+              >
+          </ion-card>
   
             <br />
-          <!-- </ion-col> -->
+       
         </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-col size="3">
-            <ion-button
-            fill="outline"
-              >Registrar</ion-button
-            >
-          </ion-col>
-        </ion-row>
+        
       </ion-grid>
     </div>
   </ion-slides>

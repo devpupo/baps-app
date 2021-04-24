@@ -12,126 +12,40 @@ ion-slides {
   width: 100%;
 }
 
-*{
-  color:#05426A;
-  --color:#05426A;
-}
 
-// ion-input{
-//   --color:red;
-// }
 
 ion-button{
-  margin-top: 30px;
-  --background:transparent;
-  --color: #05426A;
-  --border-color: #05426A;
+  
+  --background:#05426A;
+  --color: white !important;
+  --border-color: white;
   --border-width: 1px;
-  // --background:#05426A;
+  --margin-top: 2%;
+  
+}
+
+ion-content{
+  --background: url('../../assets/imagens/account_background.png') no-repeat center center / cover !important;
+
+
+}
+
+
+
+ion-label{
+  --color: black !important;
 }
 
 .span{
     display: flex;
     justify-content: center;
     font-size: 18px;
-    margin-bottom: 18px;
-    color: #05426A;
-}
-
-.tooolbar-menu{
-  --background: #7A083B;
-  color: #F7C0B5;
+    margin: 3% ;
+    color: black;
 }
 
 .RegisterMain{  
   margin-top: 40px;
   width: 100%;
 }
-// .btn{
-//   margin-top: 30px;
-//   --background: #7A083B;
-//   // color: #F7C0B5;
-//   padding-left: 0px;
-//   padding: 0px;
-//   --padding-end: 0px;
-//   --padding-start: 0px;
-//   --color: white;
-// }
-
-// .btn-create{
-//   --color: white;
-//   --background: #05426A  !important;
-//   margin-top:  10px;
-// }
-
-// .btn-login{
-//   --box-shadow: 0px;
-// }
-
-// .title-create-account{
-//   color: white;
-// }
-
-// .btn-create-account{
-//   --border-color: transparent;
-//   --padding-end: 0px;
-//   --padding-start: 0px;
-  
-// }
-
-// .card-promotion{
-//   display: block;
-//   width: 100%;
-// }
-
-// .text-suggested-flight{
-//   font-size: 12px;
-//   padding-left: 5px;
-//   display: inline;
-// }
-
-// .text-flight-stops{
-//   // color: rgba(128, 128, 128, 0.603);
-// }
-
-// .text-price{
-//   padding-right: 3px;
-//   display: inline;
-// }
-
-// .text-dollar-sign{
-//   font-size: 12px;
-// }
-
-// .text-total-price{
-//   font-size: 15px;
-//   font-weight: bold;
-// }
-
-// #container {
-//   text-align: center;
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
-
-// #container strong {
-//   font-size: 20px;
-//   line-height: 26px;
-// }
-
-// #container p {
-//   font-size: 16px;
-//   line-height: 22px;
-
-//   color: #8c8c8c;
-
-//   margin: 0;
-// }
-
-// #container a {
-//   text-decoration: none;
-// }
 

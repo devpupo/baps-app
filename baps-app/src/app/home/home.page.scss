@@ -2,6 +2,10 @@ ion-icon{
   color: black;
 }
 
+ion-content{
+  --background: url('../../assets/imagens/account_background.png') no-repeat center center / cover !important;
+}
+
 ion-slides {
   --scroll-bar-background: black;
   --scroll-bar-background-active: 10px;
