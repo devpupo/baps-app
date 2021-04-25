@@ -15,10 +15,10 @@ const routes: Routes = [
     path: 'blog',
     loadChildren: () => import('./blog/blog.module').then(m => m.BlogPageModule)
   },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
+  // {
+  //   path: 'home',
+  //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  // },
   {
     path: 'account',
     loadChildren: () => import('./account/account.module').then(m => m.AccountPageModule)
