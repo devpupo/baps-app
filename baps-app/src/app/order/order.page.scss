@@ -13,13 +13,14 @@
   margin-bottom: 2.5%;
 }
 
-ion-item {
-  background-color: transparent !important;
-}
-
 .label-input{
   margin-left: 2.5%;
   margin-right: 2.5%;
+}
+
+.label-input-valid{
+  display:flex;
+  width: 100%;
 }
 
 ion-content{
@@ -32,8 +33,9 @@ h1{
   margin-bottom: -1%;
 }
 
-ion-content{
+ion-label{
   font-family: 'Montserrat', sans-serif;
+  color:cadetblue !important;
 }
 
 ion-tab-bar{
