@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./destiny/destiny.module').then(m => m.DestinyPageModule)
   },
   {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then(m => m.OrderPageModule)
+  },
+  {
     path: 'about',
     loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule)
   },
@@ -39,10 +43,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
-  },
-  {
-    path: 'LoginPage', component: LoginPage
   }
+  // {
+  //   path: 'LoginPage', component: LoginPage
+  // }
 ];
 
 @NgModule({
