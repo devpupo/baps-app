@@ -11,6 +11,10 @@ ion-content{
   --background: url('../../assets/imagens/account_background.png') no-repeat center center / cover !important;
 }
 
+ion-searchbar{
+  margin: 2%;
+}
+
 .date{
   color: rgba(245, 243, 243, 0.822);
   align-content: left;
