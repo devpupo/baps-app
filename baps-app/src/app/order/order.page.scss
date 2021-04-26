@@ -32,8 +32,6 @@ h1{
   margin-bottom: -1%;
 }
 
-
-
 ion-content{
   font-family: 'Montserrat', sans-serif;
 }
@@ -41,4 +39,12 @@ ion-content{
 ion-tab-bar{
   --background: #05426A !important;
   --color: white;
+}
+
+ion-button{
+  --background: #05426A;
+  --color: white;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
