@@ -16,11 +16,6 @@ import { IonicStorageModule } from '@ionic/storage'
   imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule], providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
-export class AppModule implements OnInit {
+export class AppModule{}
+  
 
-  constructor(private storage: Storage) { }
-
-  async ngOnInit() {
-    await this.storage.create();
-  }
-}
