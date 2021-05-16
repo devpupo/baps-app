@@ -10,29 +10,29 @@
           <ion-card>
             <ion-item>
               <ion-label >Nome completo</ion-label>
-              <ion-input></ion-input>
+              <ion-input name="name" [(ngModel)]="name" type="text"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label >E-mail</ion-label>
-              <ion-input></ion-input>
+              <ion-input name="email" [(ngModel)]="email" type="text"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label >CPF</ion-label>
-              <ion-input></ion-input>
+              <ion-label>CPF</ion-label>
+              <ion-input name="cpf" [(ngModel)]="cpf" type="text"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label >Endereço</ion-label>
-              <ion-input></ion-input>
+              <ion-input name="address" [(ngModel)]="address" type="text"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label>Data de nascimento</ion-label>
-              <ion-input></ion-input>
+              <ion-input name="birth" [(ngModel)]="birth" type="text"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label >Senha</ion-label>
-              <ion-input></ion-input>
+              <ion-input name="password" [(ngModel)]="password" type="password"></ion-input>
             </ion-item>
-            <ion-button routerLink="/account">Registrar</ion-button>
+            <ion-button (click)="onSave()" routerLink="/account" >Registrar</ion-button>
           </ion-card>
   
             <br />
