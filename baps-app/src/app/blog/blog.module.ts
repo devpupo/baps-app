@@ -6,6 +6,10 @@ import { BlogPage } from './blog.page';
 
 import { BlogPageRoutingModule } from './blog-routing.module';
 import { ToolBarComponent } from '../components/toolbar/toolbar.component';
+import { ModalBlogTwoPage } from '../modal-blog-two/modal-blog-two.page';
+import { ModalBlogThreePage } from '../modal-blog-three/modal-blog-three.page';
+import { ModalBlogOnePage } from '../modal-blog-one/modal-blog-one.page';
+import { ModalBlogOnePageModule } from '../modal-blog-one/modal-blog-one.module';
 
 
 @NgModule({
@@ -15,6 +19,7 @@ import { ToolBarComponent } from '../components/toolbar/toolbar.component';
     IonicModule,
     BlogPageRoutingModule
   ],
-  declarations: [BlogPage, ToolBarComponent]
+  declarations: [BlogPage, ToolBarComponent, ModalBlogTwoPage, ModalBlogThreePage, ModalBlogOnePage],
+  entryComponents: [ModalBlogOnePage, ModalBlogTwoPage, ModalBlogThreePage]
 })
 export class BlogPageModule {}

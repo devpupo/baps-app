@@ -43,7 +43,19 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  },  {
+    path: 'modal-blog-one',
+    loadChildren: () => import('./modal-blog-one/modal-blog-one.module').then( m => m.ModalBlogOnePageModule)
+  },
+  {
+    path: 'modal-blog-two',
+    loadChildren: () => import('./modal-blog-two/modal-blog-two.module').then( m => m.ModalBlogTwoPageModule)
+  },
+  {
+    path: 'modal-blog-three',
+    loadChildren: () => import('./modal-blog-three/modal-blog-three.module').then( m => m.ModalBlogThreePageModule)
   }
+
   // {
   //   path: 'LoginPage', component: LoginPage
   // }
