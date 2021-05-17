@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalDestinyPage } from '../modal-destiny/modal-destiny.page';
 
 @Component({
   selector: 'app-destiny',
@@ -7,5 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DestinyPage  { 
 
-  constructor() {}
+  constructor(
+    private modalCtrl: ModalController
+    ) {}
+
+  async showModalDestiny(){
+    const modal = await this.modalCtrl.create({
+      component: ModalDestinyPage
+    });
+
+    modal.present();
+  }
 }
