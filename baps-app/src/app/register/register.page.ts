@@ -7,6 +7,7 @@ import { RegisterService } from '../services/registerService/register-service.se
   styleUrls: ['register.page.scss'],
 })
 export class RegisterPage {
+  public id: number;
   public name: string;
   public email: string;
   public cpf: string;

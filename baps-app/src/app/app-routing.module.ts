@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginPage } from './login/login.page';
 
 const routes: Routes = [
   {
@@ -43,7 +42,8 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'modal-blog-one',
     loadChildren: () => import('./modal-blog-one/modal-blog-one.module').then( m => m.ModalBlogOnePageModule)
   },
@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'modal-destiny',
     loadChildren: () => import('./modal-destiny/modal-destiny.module').then( m => m.ModalDestinyPageModule)
+  },
+  {
+    path: 'edit-info',
+    loadChildren: () => import('./edit-info/edit-info.module').then( m => m.EditInfoPageModule)
   }
 
   // {

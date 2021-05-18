@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header class="profileInfoTitle">
+      <ion-card-title>Suas informações</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Endereço</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">CPF</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.cpf"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Data de Nascimento</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.birth"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button (click)="close()">Fechar</ion-button>
+</ion-content>

@@ -9,7 +9,7 @@ type User = {
   address: string,
   birth: string,
   password: string
-};
+}
 
 @Injectable({
   providedIn: 'root',
@@ -30,6 +30,22 @@ export class RegisterService {
 
   public allUsers(): Readonly<User>[] { 
     return this.users; 
+  } 
+
+  public getUser(id: number): User { 
+    return {...this.users.find((s) => s.id === id) }; 
+  } 
+
+  public updateUser(id: number, user: User) { 
+    const oldUser = this.users.find((s) => s.id === 1);
+    oldUser.name = user.name;
+    oldUser.email = user.email;
+    oldUser.cpf = user.cpf;
+    oldUser.address = user.address;
+    oldUser.birth = user.birth;
+    oldUser.password = user.password;
+
+    this.storage.set("users", this.users);
   } 
 
   public addUser(user: User) {

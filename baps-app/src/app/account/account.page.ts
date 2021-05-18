@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 import { RegisterService } from '../services/registerService/register-service.service';
 
 @Component({
@@ -8,8 +9,10 @@ import { RegisterService } from '../services/registerService/register-service.se
 })
 export class AccountPage {
 
-  constructor(private user: RegisterService) {}
+  constructor(
+    private user: RegisterService) {}
 
   public usuarios = this.user.allUsers();
-}
+  }
+
 

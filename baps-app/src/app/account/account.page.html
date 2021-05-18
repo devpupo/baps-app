@@ -1,9 +1,7 @@
 <ion-content>
   <ion-card class="cardProfile">
-    <img
-      src="https://engenharia360.com/wp-content/uploads/2019/05/esta-pessoa-nao-existe-engenharia-360-2.png"
-      class="profileImg"
-    />
+    <img src="https://engenharia360.com/wp-content/uploads/2019/05/esta-pessoa-nao-existe-engenharia-360-2.png"
+      class="profileImg" />
     <ion-card-header>
       <ion-card-title *ngFor="let user of usuarios">Olá {{user.name}}</ion-card-title>
       <ion-card-subtitle>Seja bem vindo ao seu perfil</ion-card-subtitle>
@@ -16,7 +14,9 @@
   <ion-card>
     <ion-card-header class="profileInfoTitle">
       <ion-card-title>Suas informações</ion-card-title>
-      <ion-icon name="brush-outline" class="brushIcon"></ion-icon>
+      <ion-button [routerLink]="['/edit-info', usuarios.id]" fill="clear">
+        <ion-icon name="brush-outline" class="brushIcon"></ion-icon>
+      </ion-button>
     </ion-card-header>
 
     <ion-card-content>
@@ -27,21 +27,21 @@
       <ion-item>
         <ion-label position="stacked">Email</ion-label>
         <ion-input disabled="true" type="text" *ngFor="let user of usuarios">{{user.email}}</ion-input>
-        </ion-item>
+      </ion-item>
       <ion-item>
         <ion-label position="stacked">Endereço</ion-label>
         <ion-input disabled="true" type="text" *ngFor="let user of usuarios">{{user.address}}</ion-input>
-        </ion-item>
+      </ion-item>
       <ion-item>
         <ion-label position="stacked">CPF</ion-label>
         <ion-input disabled="true" type="text" *ngFor="let user of usuarios">{{user.cpf}}</ion-input>
-        </ion-item>
+      </ion-item>
       <ion-item>
         <ion-label position="stacked">Data de Nascimento</ion-label>
         <ion-input disabled="true" type="text" *ngFor="let user of usuarios">{{user.birth}}</ion-input>
-        </ion-item>
+      </ion-item>
     </ion-card-content>
   </ion-card>
-  
+
 </ion-content>
 <app-toolbar></app-toolbar>
