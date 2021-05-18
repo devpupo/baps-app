@@ -14,6 +14,4 @@ export class ModalDestinyPage implements OnInit {
 
   ngOnInit() {
   }
-
-  
 }
