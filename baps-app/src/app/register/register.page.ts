@@ -18,16 +18,17 @@ export class RegisterPage {
 
   ngOnInit() {}
 
-  onSave() {
-    const user = {
-      name: this.name,
-      email: this.email,
-      cpf: this.cpf,
-      address: this.address,
-      birth: this.birth,
-      password: this.password,
+    public user = {
+      id: 0,
+      name: '',
+      email: '',
+      cpf: '',
+      address: '',
+      birth: '',
+      password: ''
     };
-    this.registerService.addUser(user);
-    this.registerService.getAllUsersAsync();
+
+  onSave() {
+    this.registerService.addUser(this.user);
   }
 }

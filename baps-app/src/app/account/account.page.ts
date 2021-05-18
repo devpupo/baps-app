@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RegisterService } from '../services/registerService/register-service.service';
 
 @Component({
   selector: 'app-account',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AccountPage {
 
-  constructor() {}
+  constructor(private user: RegisterService) {}
 
+  public usuarios = this.user.allUsers();
 }
+
