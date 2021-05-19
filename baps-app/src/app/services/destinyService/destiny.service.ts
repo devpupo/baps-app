@@ -1,11 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
-
-interface Destiny {
-  id: number,
-  destiny: string,
-  total: number
-};
+import { Destiny } from 'src/app/model/destiny';
 
 @Injectable({
   providedIn: 'root',

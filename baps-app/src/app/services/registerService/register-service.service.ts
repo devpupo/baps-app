@@ -1,15 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
-
-type User = {
-  id: number,
-  name: string,
-  email: string,
-  cpf: string,
-  address: string,
-  birth: string,
-  password: string
-}
+import { User } from 'src/app/model/user';
 
 @Injectable({
   providedIn: 'root',
@@ -53,5 +44,6 @@ export class RegisterService {
     user.id = maxId + 1;
     this.users.push({ ...user});
     this.storage.set('users', this.users);
+    this.storage.set('currentUser', user);
   }
 }

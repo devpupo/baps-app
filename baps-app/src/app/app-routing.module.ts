@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./destiny/destiny.module').then(m => m.DestinyPageModule)
   },
   {
-    path: 'order',
+    path: 'modal-destiny/:id/order',
     loadChildren: () => import('./order/order.module').then(m => m.OrderPageModule)
   },
   {

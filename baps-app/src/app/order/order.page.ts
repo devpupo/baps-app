@@ -1,11 +1,39 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DestinyService } from '../services/destinyService/destiny.service';
+import { LoginService } from '../services/loginService/login.service';
+import { OrderService } from '../services/orderService/order.service';
+import { RegisterService } from '../services/registerService/register-service.service';
 
 @Component({
   selector: 'app-order',
   templateUrl: 'order.page.html',
   styleUrls: ['order.page.scss'],
 })
-export class OrderPage  { 
+export class OrderPage implements OnInit {
 
-  constructor() {}
+  id: number;
+  currentDestiny: any = {};
+
+  constructor(private route: ActivatedRoute,
+    private router: Router,
+    private readonly destinyService: DestinyService,
+    private orderService: OrderService,
+    private loginService: LoginService) {
+
+  }
+  async ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+    });
+    console.log(this.id);
+    const destinations = await this.destinyService.getDestiny();
+    this.currentDestiny = destinations.filter(d => d.id == this.id)[0];
+    console.log(this.currentDestiny);
+  }
+
+  async AddOrderToPerfil() {
+    this.orderService.setOrder(await this.loginService.getCurrentUser(), this.currentDestiny);
+    this.router.navigate(['/account']);
+  }
 }

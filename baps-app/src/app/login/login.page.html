@@ -3,11 +3,11 @@
     <ion-grid>
       <ion-row class="ion-justify-content-center">
         <ion-col size="6">
-            <ion-input class="input-login" type="email" inputmode="email" placeholder="email@exemplo.com" required>
+            <ion-input class="input-login" type="email" inputmode="email" placeholder="email@exemplo.com" (input)="email=$any($event.target).value" required>
             </ion-input>
-            <ion-input class="input-login" type="password" placeholder="Senha" required></ion-input>
+            <ion-input class="input-login" type="password" placeholder="Senha" (input)="password=$any($event.target).value" required></ion-input>
             <br>
-            <ion-button expand='block' type="submit" routerLink="/account">Entrar</ion-button>
+            <ion-button expand='block' type="submit" (click)="setCurrentUser()">Entrar</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
