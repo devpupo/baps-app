@@ -4,7 +4,7 @@ import { Storage } from '@ionic/storage-angular';
 interface Destiny {
   id: number,
   destiny: string,
-  value: number
+  total: number
 };
 
 @Injectable({
@@ -20,17 +20,17 @@ export class DestinyService {
     this.destinations = [{
       id: 20,
       destiny: "Hyatt Regency Orlando",
-      value: 1080
+      total: 1080
     },
     {
       id: 21,
       destiny: "Pacote Buenos Aires",
-      value: 1699
+      total: 1699
     },
     {
       id: 22,
       destiny: "Hotel Bellagio Las Vegas",
-      value: 5541
+      total: 5541
     }]
     await this.storage.set('destiny', this.destinations);
   }

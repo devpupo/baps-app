@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import { ModalDestinyPage } from '../modal-destiny/modal-destiny.page';
 import { DestinyService } from '../services/destinyService/destiny.service';
-import { MatDialog } from '@angular/material/dialog';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-destiny',
   templateUrl: 'destiny.page.html',
@@ -12,9 +9,8 @@ import { MatDialog } from '@angular/material/dialog';
 export class DestinyPage implements OnInit {
 
   constructor(
-    private modalCtrl: ModalController,
     private destinyService: DestinyService,
-    private dialog: MatDialog
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -22,12 +18,6 @@ export class DestinyPage implements OnInit {
   }
 
   async showModalDestiny(key: number) {
-    this.dialog.open(ModalDestinyPage, {
-      data: {
-        "key": key
-      },
-      height: '800px',
-      width: '1200px',
-    });
+    this.router.navigate(['/modal-destiny', key]);
   }
 }

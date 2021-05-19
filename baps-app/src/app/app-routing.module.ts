@@ -56,7 +56,7 @@ const routes: Routes = [
     loadChildren: () => import('./modal-blog-three/modal-blog-three.module').then( m => m.ModalBlogThreePageModule)
   },
   {
-    path: 'modal-destiny',
+    path: 'modal-destiny/:id',
     loadChildren: () => import('./modal-destiny/modal-destiny.module').then( m => m.ModalDestinyPageModule)
   },
   {

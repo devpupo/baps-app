@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { DestinyService } from '../services/destinyService/destiny.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-modal-destiny',
@@ -8,10 +9,20 @@ import { ModalController } from '@ionic/angular';
 })
 export class ModalDestinyPage implements OnInit {
 
+  currentDestiny: any = {};
+
   constructor(
-    private modalCtrl: ModalController
+    private route: ActivatedRoute,
+    private readonly destinyService: DestinyService
   ) { }
 
-  ngOnInit() {
+  id: any;
+
+  async ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+    });
+    const destinations = await this.destinyService.getDestiny();
+    this.currentDestiny = destinations.filter(d => d.id == this.id)[0];
   }
 }

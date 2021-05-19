@@ -1,9 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>ai zé</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <ion-header>
+    <h1 class="title">{{currentDestiny.destiny}}</h1>
+  </ion-header>
+    <div class="label-input">
+      <ion-item>
+        <ion-label>De</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2012-12-09" value="2021-01-01T15:03:46.789"></ion-datetime>
+        <ion-label>Até</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2012-12-09" value="2021-01-01T15:03:46.789"></ion-datetime>
+      </ion-item>
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-label>Hóspedes</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="1">Sozinho</ion-select-option>
+          <ion-select-option value="2">Casal</ion-select-option>
+          <ion-select-option value="3">Familia até 5</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <div class="label-input">
+      <ion-label>Valor Total   </ion-label>
+      <ion-label>R$ {{currentDestiny.total}}</ion-label>
+    </div>
+    <ion-button routerLink="/order">Confirmar!</ion-button>
 </ion-content>
