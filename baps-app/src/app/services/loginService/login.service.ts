@@ -14,6 +14,7 @@ export class LoginService {
   }
 
   async getCurrentUser(){
-    return await this.storage.get('currentUser');
+    let c = await this.storage.get('currentUser');
+    return c;
   }
 }

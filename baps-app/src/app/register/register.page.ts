@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 // import { ActivatedRoute } from '@angular/router';
 import { RegisterService } from '../services/registerService/register-service.service';
 @Component({
@@ -15,7 +16,7 @@ export class RegisterPage {
   public birth: string;
   public password: string;
 
-  constructor(private registerService: RegisterService) {}
+  constructor(private registerService: RegisterService, private router: Router) {}
 
   ngOnInit() {}
 
@@ -31,5 +32,6 @@ export class RegisterPage {
 
   onSave() {
     this.registerService.addUser(this.user);
+    this.router.navigate(['account', this.user.id]);
   }
 }

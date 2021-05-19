@@ -13,11 +13,18 @@
     <ion-card-header>
       <ion-card-title>Seus Pedidos</ion-card-title>
     </ion-card-header>
-
     <ion-card-content>
-      <ion-item>
-        
-      </ion-item>
+      <div *ngIf="'userDestinations.length > 0; else elseBlock'">
+        <ion-item *ngFor="let order of userDestinations">
+          {{order.destiny}}
+        </ion-item>
+        <ng-template #elseBlock>
+          <ion-item>
+            Não existem ordens anteriores
+          </ion-item>
+        </ng-template>
+
+      </div>
     </ion-card-content>
   </ion-card>
 

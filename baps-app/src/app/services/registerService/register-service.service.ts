@@ -39,11 +39,11 @@ export class RegisterService {
     this.storage.set("users", this.users);
   } 
 
-  public addUser(user: User) {
+  public async addUser(user: User) {
     const maxId = Math.max(0, ...this.users.map(s => s.id));
     user.id = maxId + 1;
     this.users.push({ ...user});
     this.storage.set('users', this.users);
-    this.storage.set('currentUser', user);
+    console.log(await this.storage.set('currentUser', user));
   }
 }

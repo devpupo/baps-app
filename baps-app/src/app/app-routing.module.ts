@@ -23,7 +23,7 @@ const routes: Routes = [
   //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   // },
   {
-    path: 'account',
+    path: 'account/:id',
     loadChildren: () => import('./account/account.module').then(m => m.AccountPageModule)
   },
   {

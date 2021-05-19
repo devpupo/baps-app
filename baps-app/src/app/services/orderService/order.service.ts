@@ -27,8 +27,8 @@ export class OrderService {
     this.storage.set(user.user.email, user.order);
   }
 
-  async getOrder(user: User){
+  async getOrder(user: User) : Promise<Destiny[]>{
     let userOrder = await this.storage.get(user.email);
-    return userOrder.order;
+    return userOrder;
   }
 }

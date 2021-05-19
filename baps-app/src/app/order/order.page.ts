@@ -35,6 +35,6 @@ export class OrderPage implements OnInit {
   async AddOrderToPerfil() {
     let currentUser = await this.loginService.getCurrentUser();
     this.orderService.setOrder(currentUser, this.currentDestiny);
-    this.router.navigate(['/account']);
+    this.router.navigate(['/account', currentUser.id]);
   }
 }
