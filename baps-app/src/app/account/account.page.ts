@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ModalController } from '@ionic/angular';
 import { Destiny } from '../model/destiny';
 import { User } from '../model/user';
 import { LoginService } from '../services/loginService/login.service';
@@ -28,6 +27,11 @@ export class AccountPage implements OnInit {
     this.currentUser = await this.loginService.getCurrentUser();
     this.usuarios = [this.currentUser];
     this.userDestinations = await this.orderService.getOrder(this.currentUser);
+  }
+
+  editInfo(){
+    let result = this.router.navigate(['/edit-info', this.currentUser.id]);
+    console.log(result);
   }
 
 }

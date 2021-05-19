@@ -24,10 +24,10 @@ export class RegisterService {
   } 
 
   public getUser(id: number): User { 
-    return {...this.users.find((s) => s.id === id) }; 
+    return {...this.users.find((s) => s.id == id) }; 
   } 
 
-  public updateUser(id: number, user: User) { 
+  public async updateUser(id: number, user: User) { 
     const oldUser = this.users.find((s) => s.id === 1);
     oldUser.name = user.name;
     oldUser.email = user.email;
@@ -35,7 +35,8 @@ export class RegisterService {
     oldUser.address = user.address;
     oldUser.birth = user.birth;
     oldUser.password = user.password;
-
+    
+    await this.storage.set('currentUser', user);
     this.storage.set("users", this.users);
   } 
 
@@ -44,6 +45,6 @@ export class RegisterService {
     user.id = maxId + 1;
     this.users.push({ ...user});
     this.storage.set('users', this.users);
-    console.log(await this.storage.set('currentUser', user));
+    await this.storage.set('currentUser', user);
   }
 }

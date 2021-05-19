@@ -14,18 +14,21 @@ export class EditInfoPage implements OnInit {
   public id;
 
   constructor(
-    route: ActivatedRoute,
+    private route: ActivatedRoute,
     private navCtrl: NavController,
     private user: RegisterService) {
-      this.id = 1;
-      this.usuario = this.user.getUser(1);
+
     }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+      this.usuario = this.user.getUser(this.id);
+    });
   }
 
-  close(){
-    this.user.updateUser(this.id, this.usuario);
+  async close(){
+    await this.user.updateUser(this.id, this.usuario);
     this.navCtrl.back();
   }
 

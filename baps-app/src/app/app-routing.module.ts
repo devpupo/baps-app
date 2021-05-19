@@ -60,7 +60,7 @@ const routes: Routes = [
     loadChildren: () => import('./modal-destiny/modal-destiny.module').then( m => m.ModalDestinyPageModule)
   },
   {
-    path: 'edit-info',
+    path: 'edit-info/:id',
     loadChildren: () => import('./edit-info/edit-info.module').then( m => m.EditInfoPageModule)
   }
 

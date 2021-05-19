@@ -28,7 +28,7 @@ export class LoginPage implements OnInit {
       alert('Usuario não existe');
     } else {
       this.loginService.setCurrentUser(currentUser);
-      this.router.navigate(['/account']);
+      this.router.navigate(['/account', currentUser.id]);
     }
   }
 }

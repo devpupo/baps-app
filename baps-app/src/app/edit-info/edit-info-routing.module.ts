@@ -5,7 +5,7 @@ import { EditInfoPage } from './edit-info.page';
 
 const routes: Routes = [
   {
-    path: ':id',
+    path: '',
     component: EditInfoPage
   }
 ];
