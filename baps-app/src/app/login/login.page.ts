@@ -11,27 +11,24 @@ import { RegisterService } from '../services/registerService/register-service.se
 })
 
 export class LoginPage implements OnInit {
-  email:string;
+  email: string;
   password: string;
 
-  constructor(private loginService: LoginService, 
+  constructor(private loginService: LoginService,
     private registerService: RegisterService,
     private router: Router) { }
 
   ngOnInit() {
   }
 
-  setCurrentUser(){
+  setCurrentUser() {
     var users = this.registerService.allUsers();
-    var currentUser = users.find((x:User) => x.email == this.email);
-    if(currentUser == null){
+    var currentUser = users.find((x: User) => x.email == this.email);
+    if (currentUser == null) {
       alert('Usuario não existe');
-    }else{
+    } else {
       this.loginService.setCurrentUser(currentUser);
       this.router.navigate(['/account']);
     }
-    
   }
-
-
 }
