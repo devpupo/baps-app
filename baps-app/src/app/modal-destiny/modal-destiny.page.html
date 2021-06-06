@@ -24,5 +24,16 @@
       <ion-label>Valor Total   </ion-label>
       <ion-label>R$ {{currentDestiny.total}}</ion-label>
     </div>
+
+    <div class="destiny_weather">
+      <p><b>Saiba como está o clima nesta região antes de comprar:</b></p>
+      <p><b>Temperatura atual:</b> {{currentTemperatures.data?.current.temperature}}°C</p>
+      <p><b>Temperatura Minima:</b> {{currentTemperatures.data?.current.temperatureMin}}°C</p>
+      <p><b>Temperatura maxima:</b> {{currentTemperatures.data?.current.temperatureMax}}°C</p>
+      <p><b>Chance de chuva:</b> {{currentTemperatures.data?.current.rain * 100}}%</p>
+      <p><b>Velocidade do vento:</b> {{currentTemperatures.data?.current.windSpeed}}km/h</p>
+    </div>
+
+
     <ion-button [routerLink]="['order']">Confirmar!</ion-button>
 </ion-content>
