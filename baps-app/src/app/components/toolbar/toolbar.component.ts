@@ -33,4 +33,16 @@ export class ToolBarComponent implements OnInit {
     }
     result = this.router.navigate(['/account', this.currentUser.id]);
   }
+
+  onDestiny(){
+    this.router.navigate(['/destiny']);
+  }
+
+  onAbout(){
+    this.router.navigate(['/about']);
+  }
+
+  onBlog(){
+    this.router.navigate(['/blog']);
+  }
 }

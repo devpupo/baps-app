@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DestinyService } from '../services/destinyService/destiny.service';
 import { LoginService } from '../services/loginService/login.service';
 import { OrderService } from '../services/orderService/order.service';
-import { RegisterService } from '../services/registerService/register-service.service';
 
 @Component({
   selector: 'app-order',

@@ -2,17 +2,17 @@
   <ion-tabs>
     <ion-tab-bar slot="bottom">
 
-      <ion-tab-button tab="destinos" routerLink="/destiny">
+      <ion-tab-button tab="destinos" (click)="onDestiny()">
         <ion-icon name="airplane-outline"></ion-icon>
         <ion-label>Destinos</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="dicas" routerLink="/blog">
+      <ion-tab-button tab="dicas" (click)="onBlog()">
         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
         <ion-label>Dicas</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="contato" routerLink="/about">
+      <ion-tab-button tab="contato" (click)="onAbout()">
         <ion-icon name="at-outline"></ion-icon>
         <ion-label>Contato</ion-label>
       </ion-tab-button>
