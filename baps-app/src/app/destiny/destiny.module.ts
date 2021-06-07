@@ -7,6 +7,7 @@ import { DestinyPage } from './destiny.page';
 import { DestinyPageRoutingModule } from './destiny-routing.module';
 import { ModalDestinyPage } from '../modal-destiny/modal-destiny.page';
 import { ToolBarModule } from '../components/toolbar/toolbar.module';
+import { ModalDestinyPageModule } from '../modal-destiny/modal-destiny.module';
 
 @NgModule({
   imports: [
@@ -14,9 +15,10 @@ import { ToolBarModule } from '../components/toolbar/toolbar.module';
     FormsModule,
     IonicModule,
     DestinyPageRoutingModule,
-    ToolBarModule
+    ToolBarModule,
+    ModalDestinyPageModule
   ],
-  declarations: [DestinyPage, ModalDestinyPage],
+  declarations: [DestinyPage],
   entryComponents: [ModalDestinyPage]
 
 })

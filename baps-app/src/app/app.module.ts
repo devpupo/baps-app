@@ -19,7 +19,7 @@ import { HttpClientModule } from'@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     IonicStorageModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy}],
   bootstrap: [AppComponent],

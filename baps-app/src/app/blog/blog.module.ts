@@ -9,6 +9,9 @@ import { ModalBlogTwoPage } from '../modal-blog-two/modal-blog-two.page';
 import { ModalBlogThreePage } from '../modal-blog-three/modal-blog-three.page';
 import { ModalBlogOnePage } from '../modal-blog-one/modal-blog-one.page';
 import { ToolBarModule } from '../components/toolbar/toolbar.module';
+import { ModalBlogOnePageModule } from '../modal-blog-one/modal-blog-one.module';
+import { ModalBlogThreePageModule } from '../modal-blog-three/modal-blog-three.module';
+import { ModalBlogTwoPageModule } from '../modal-blog-two/modal-blog-two.module';
 
 
 @NgModule({
@@ -17,9 +20,12 @@ import { ToolBarModule } from '../components/toolbar/toolbar.module';
     FormsModule,
     IonicModule,
     BlogPageRoutingModule,
-    ToolBarModule
+    ToolBarModule,
+    ModalBlogOnePageModule,
+    ModalBlogTwoPageModule,
+    ModalBlogThreePageModule
   ],
-  declarations: [BlogPage, ModalBlogTwoPage, ModalBlogThreePage, ModalBlogOnePage],
+  declarations: [BlogPage],
   entryComponents: [ModalBlogOnePage, ModalBlogTwoPage, ModalBlogThreePage]
 })
 export class BlogPageModule {}
