@@ -6,16 +6,17 @@ import { HomePage } from './home.page';
 
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { ToolBarComponent } from '../components/toolbar/toolbar.component';
+import { ToolBarModule } from '../components/toolbar/toolbar.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    ToolBarModule
   ],
-  declarations: [HomePage, ToolBarComponent], 
+  declarations: [HomePage], 
 })
 export class HomePageModule {
 

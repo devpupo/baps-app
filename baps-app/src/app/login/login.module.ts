@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
-import { ToolBarComponent } from '../components/toolbar/toolbar.component';
+import { ToolBarModule } from '../components/toolbar/toolbar.module';
 
 
 @NgModule({
@@ -15,8 +15,9 @@ import { ToolBarComponent } from '../components/toolbar/toolbar.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    ToolBarModule
   ],
-  declarations: [LoginPage, ToolBarComponent]
+  declarations: [LoginPage]
 })
 export class LoginPageModule {}

@@ -5,15 +5,16 @@ import { FormsModule } from '@angular/forms';
 import { AccountOffPage } from './accountOff.page';
 
 import { AccountOffPageRoutingModule } from './accountOff-routing.module';
-import { ToolBarComponent } from '../components/toolbar/toolbar.component';
+import { ToolBarModule } from '../components/toolbar/toolbar.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AccountOffPageRoutingModule
+    AccountOffPageRoutingModule,
+    ToolBarModule
   ],
-  declarations: [AccountOffPage, ToolBarComponent]
+  declarations: [AccountOffPage]
 })
 export class AccountOffPageModule {}

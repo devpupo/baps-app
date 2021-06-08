@@ -5,15 +5,16 @@ import { FormsModule } from '@angular/forms';
 import { OrderPage } from './order.page';
 
 import { OrderPageRoutingModule } from './order-routing.module';
-import { ToolBarComponent } from '../components/toolbar/toolbar.component';
+import { ToolBarModule } from '../components/toolbar/toolbar.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrderPageRoutingModule
+    OrderPageRoutingModule,
+    ToolBarModule
   ],
-  declarations: [OrderPage, ToolBarComponent]
+  declarations: [OrderPage]
 })
 export class OrderPageModule {}
